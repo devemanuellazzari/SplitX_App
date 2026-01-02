@@ -3,12 +3,12 @@ program SplitX;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  Frm_Principal in 'view\Frm_Principal.pas' {Form1};
+  Frm_Principal in 'view\Frm_Principal.pas' {FrmPrincipal};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
   Application.Run;
 end.

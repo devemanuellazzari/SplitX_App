@@ -277,7 +277,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="view\Frm_Principal.pas">
-            <Form>Form1</Form>
+            <Form>FrmPrincipal</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

@@ -1,11 +1,131 @@
-object Form1: TForm1
+object FrmPrincipal: TFrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 450
+  ClientHeight = 448
   ClientWidth = 320
+  Fill.Kind = Solid
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object lytPrincipal: TLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 448.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lytOpLogin: TLayout
+      Align = Bottom
+      Position.Y = 312.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 136.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object rndrctGmail: TRoundRect
+        Position.X = 32.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object rndrctFacebook: TRoundRect
+        Position.X = 120.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object rndrctOutlook: TRoundRect
+        Position.X = 216.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lytCadastro: TLayout
+        Align = Bottom
+        Position.Y = 86.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object lblCadastro: TLabel
+          Align = Left
+          Margins.Left = 25.000000000000000000
+          Position.X = 25.000000000000000000
+          Size.Width = 136.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'N'#227'o possue uma conta?'
+          TabOrder = 1
+        end
+        object lblCriarConta: TLabel
+          Align = Left
+          StyledSettings = [Family, Size]
+          Margins.Left = 5.000000000000000000
+          Position.X = 166.000000000000000000
+          Size.Width = 107.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claBlue
+          TextSettings.HorzAlign = Center
+          Text = 'Criar conta SplitX'
+          TabOrder = 0
+        end
+      end
+    end
+    object lytLogin: TLayout
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 312.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lblEmail: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 33.000000000000000000
+        Text = 'E-mail'
+        TabOrder = 1
+      end
+      object lblSenha: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 113.000000000000000000
+        Text = 'Senha'
+        TabOrder = 0
+      end
+      object edt1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 32.000000000000000000
+        Position.Y = 58.000000000000000000
+      end
+      object edt2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 32.000000000000000000
+        Position.Y = 138.000000000000000000
+      end
+      object rndrctLogin: TRoundRect
+        Position.X = 56.000000000000000000
+        Position.Y = 248.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        object lblLogin: TLabel
+          Align = Client
+          StyledSettings = [Family, Size]
+          Size.Width = 201.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Entrar'
+          TabOrder = 0
+        end
+      end
+    end
+  end
 end
